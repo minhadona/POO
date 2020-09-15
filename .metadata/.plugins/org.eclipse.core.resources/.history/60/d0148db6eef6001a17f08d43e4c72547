@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class Exercicio1 {
+	public static void main (String args[]) {
+		Circunferencia circunferencia = new Circunferencia();
+		Scanner input = new Scanner (System.in);
+		double raio;
+		
+		System.out.println("Digite o raio: ");
+		raio = input.nextDouble();
+		
+		circunferencia.setRaio(raio);
+		
+		System.out.println("\nO diametro da circunferência é " + circunferencia.getDiametro()); 
+      System.out.println("\nA area da circunferência é " + circunferencia.getArea());
+	}  
+}

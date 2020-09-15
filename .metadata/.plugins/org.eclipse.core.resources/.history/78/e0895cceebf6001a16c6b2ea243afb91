@@ -1,0 +1,32 @@
+/*
+ * Criar a classe Circunferência para calcular o diâmetro e área da cincunferência.
+ * Classe Circunferência.
+ * E o programa para testar a classe Circunferência.
+ */
+
+class Circunferencia {
+
+	private double Diametro, Area, Raio;
+	
+	public Circunferencia() {}
+	
+	public Circunferencia(double raio) {
+		setRaio(raio);	
+	}
+	
+	public void setRaio(double raio) {
+		if (raio<0) Raio = raio * -1; 
+		else Raio = raio;
+	}
+	
+	public double getDiametro() {
+		Diametro = Raio * 2;
+		return Diametro;
+	}
+	
+	public double getArea(){
+		Area = 3.14 * (Math.pow(Raio, 2));
+		return Area;
+	}
+	
+}
